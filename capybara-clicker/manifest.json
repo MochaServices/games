@@ -1,0 +1,19 @@
+{
+    "name": "Capybara Clicker",
+    "short_name": "Capybara Clicker",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#231F20",
+    "icons": [
+	  {
+        "src": "Icon_1920x1080.png",
+        "sizes": "1920x1080",
+        "type": "image/png"
+      },
+	  {
+        "src": "Icon_512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+	]
+  }
