@@ -4,11 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tag</title>
-	<script src="scripts/validate.js"></script>
-	<meta name="robots" cont		ent="noindex,nofollow" />
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
 
+	<script src="scripts/validate.js"></script>
+
+	<meta name="robots" content="noindex,nofollow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
 	<meta name="generator" content="Scirra Construct">
 	<meta name="author" content="jet">
 	<meta name="description" content="jet">
@@ -17,27 +17,26 @@
 	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
 	<link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
 	<link rel="icon" type="image/png" href="icons/icon-512.png">
-
 	<link rel="stylesheet" href="style.css">
-
-
 </head>
 
 <body>
-
 	<script>
-		if (location.protocol.substr(0, 4) === "file")
-{
-	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
-}
+		if (location.protocol.substr(0, 4) === "file") {
+			alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
+		}
 	</script>
 	
 	<script>
         window.onload = function() {
-            validateToken();
+            if (typeof validateToken === 'function') {
+                validateToken();
+            } else {
+                console.error("validateToken function is not defined.");
+            }
         };
     </script>
-	
+
 	<script src="/JS/poki/poki-sdk.js"></script>
 	<noscript>
 		<div id="notSupportedWrap">
