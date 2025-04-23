@@ -30,7 +30,7 @@
 	<script>
         window.onload = function() {
             if (typeof validateToken === 'function') {
-                validateToken();
+                setTimeout(validateToken, 100);
             } else {
                 console.error("validateToken function is not defined.");
             }
