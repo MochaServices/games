@@ -1,0 +1,34 @@
+<html>
+<head>
+  <title>Mocha Services</title>
+  
+ <link rel="icon" sizes="192x192" href="img/thumb.png">
+ <link rel="shortcut icon" href="img/thumb.png" type="image/x-icon"/>
+ <link rel="apple-touch-icon" href="img/thumb.png" type="image/x-icon"/>
+  
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta content="https://mochaservices.github.io/rooftop-snipers" property="og:url" />
+   <meta content="https://mochaservices.github.io/rooftop-snipers/img/thumb.png" property="og:image" />
+   <meta content="#000000" data-react-helmet="true" name="theme-color" />
+   <meta name="title" content="Mocha Services">
+   <meta name="description" content="Mocha Services">
+   <meta name="keywords" content="mocha, services">
+   <meta name="robots" content="index, follow">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="language" content="English">
+   <meta name="revisit-after" content="1 days">
+   <meta name="author" content="MochaServices">
+  
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="TemplateData/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/rooftop-snipers.json", { onProgress: UnityProgress, Module: { onRuntimeInitialized: function() { UnityProgress(gameInstance, "complete") } } });
+    </script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+    <div class="webgl-content">
+        <div id="gameContainer" style="width: 100%; height: 100%; margin: 0;"></div>
+    </div>
+</body>
+</html>
